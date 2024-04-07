@@ -2,7 +2,7 @@ package uuid
 
 import (
 	"github.com/bwmarrin/snowflake"
-	"github.com/jimu-server/config/config"
+	"github.com/jimu-server/config"
 )
 
 var node *snowflake.Node
