@@ -47,6 +47,11 @@ type TNode[T Key] struct {
 	Child     []*TNode[T] `json:"children"`
 }
 
+type AnyNode struct {
+	Entity any        `json:"entity"`
+	Child  []*AnyNode `json:"children"`
+}
+
 /*
 BuildTree 获取 id 下的子树
 @Param id 需要查询的节点主键id
